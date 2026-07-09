@@ -145,7 +145,7 @@ export default function Portfolio() {
                 <div>
                   <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-3">Software & Alat Kerja</h3>
                   <div className="flex flex-wrap gap-2">
-                    {['Kubuntu Linux', 'Macromedia Flash', 'Wick Editor', 'Inkscape', 'GIMP', 'Olive Video Editor', 'JASP', 'PSPP', 'GNU Octave', 'LibreOffice'].map((soft) => (
+                    {['GNU/Linux distro Kubuntu', 'Macromedia Flash', 'Wick Editor', 'Inkscape', 'GIMP', 'Olive Video Editor', 'JASP', 'PSPP', 'GNU Octave','MATLAB','Maple Software','GNU GeoGebra', 'LibreOffice'].map((soft) => (
                       <span key={soft} className="bg-indigo-50/60 text-indigo-950 text-xs font-semibold px-3 py-1.5 rounded-lg border border-indigo-100">{soft}</span>
                     ))}
                   </div>
