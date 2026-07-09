@@ -17,6 +17,8 @@ export default function Navbar() {
           <a href="#" className="hover:text-white transition-colors">Beranda</a>
           <a href="#produk" className="hover:text-white transition-colors">Produk</a>
           <a href="#portofolio" className="hover:text-white transition-colors">Portofolio</a>
+          <a href="#testimoni" className="hover:text-white transition-colors">Testimoni</a>
+          <a href="#prestasi" className="hover:text-white transition-colors">Prestasi</a>
           <a href="https://wa.me/6285256162879" target="_blank" rel="noopener noreferrer" className="rounded-xl bg-indigo-600 px-4 py-2 font-semibold text-white shadow-md shadow-indigo-600/20 hover:bg-indigo-500 transition-all duration-200">
             Konsultasi (WA)
           </a>
