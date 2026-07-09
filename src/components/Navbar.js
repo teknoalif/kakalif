@@ -43,6 +43,7 @@ export default function Navbar() {
           <a href="#" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Beranda</a>
           <a href="#produk" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Produk</a>
           <a href="#portofolio" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Portofolio</a>
+          <a href="#testimoni" className="hover:text-white transition-colors">Testimoni</a  
           <a href="https://wa.me/6285256162879" target="_blank" rel="noopener noreferrer" className="block w-full text-center rounded-xl bg-indigo-600压 py-2.5 font-semibold text-white hover:bg-indigo-500 transition-colors">
             Konsultasi (WA)
           </a>
