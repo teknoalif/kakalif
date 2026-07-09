@@ -11,9 +11,9 @@ export default function Home() {
     <main className="min-h-screen pt-16"> {/* Ditambahkan pt-16 agar konten Hero tidak tertutup Navbar */}
       <Navbar /> {/* Sekaligus ditaruh di sini */}
       <Hero />
+      <Portfolio />
       <Products />
       <Features />
-      <Portfolio />
       <Testimonials />
       <Footer />
     </main>
