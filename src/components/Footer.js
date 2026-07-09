@@ -8,7 +8,7 @@ export default function Footer() {
         </div>
         <div className="flex gap-6 text-sm">
           <a href="https://instagram.com/aalifrezky" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
-          <a href="https://youtube.com/kakalifgurumatematika" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a>
+          <a href="https://youtube.com/@kakalifgurumatematika" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a>
           <a href="https://wa.me/6285256162879" className="hover:text-white transition-colors">Hubungi WA</a>
         </div>
         <div className="text-xs text-slate-500">
