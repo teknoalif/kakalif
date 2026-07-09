@@ -13,12 +13,12 @@ export default function Navbar() {
         </a>
 
         {/* Menu Desktop */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
           <a href="#" className="hover:text-white transition-colors">Beranda</a>
           <a href="#produk" className="hover:text-white transition-colors">Produk</a>
           <a href="#portofolio" className="hover:text-white transition-colors">Portofolio</a>
-          <a href="#testimoni" className="hover:text-white transition-colors">Testimoni</a>
           <a href="#prestasi" className="hover:text-white transition-colors">Prestasi</a>
+          <a href="#testimoni" className="hover:text-white transition-colors">Testimoni</a>
           <a href="https://wa.me/6285256162879" target="_blank" rel="noopener noreferrer" className="rounded-xl bg-indigo-600 px-4 py-2 font-semibold text-white shadow-md shadow-indigo-600/20 hover:bg-indigo-500 transition-all duration-200">
             Konsultasi (WA)
           </a>
@@ -45,8 +45,9 @@ export default function Navbar() {
           <a href="#" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Beranda</a>
           <a href="#produk" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Produk</a>
           <a href="#portofolio" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Portofolio</a>
-          <a href="#testimoni" className="hover:text-white transition-colors">Testimoni</a  
-          <a href="https://wa.me/6285256162879" target="_blank" rel="noopener noreferrer" className="block w-full text-center rounded-xl bg-indigo-600压 py-2.5 font-semibold text-white hover:bg-indigo-500 transition-colors">
+          <a href="#prestasi" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Prestasi</a>
+          <a href="#testimoni" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Testimoni</a>
+          <a href="https://wa.me/6285256162879" target="_blank" rel="noopener noreferrer" className="block w-full text-center rounded-xl bg-indigo-600 py-2.5 font-semibold text-white hover:bg-indigo-500 transition-colors">
             Konsultasi (WA)
           </a>
         </div>
