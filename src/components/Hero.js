@@ -20,12 +20,12 @@ export default function Hero() {
               className="h-16 w-16 object-contain rounded-2xl bg-white/10 p-1.5 backdrop-blur-sm shadow-md"
             />
             <h1 className="text-4xl font-extrabold sm:text-5xl leading-tight text-white drop-shadow-md">
-              Alif Rezky, M.Pd.
+              Alif Rezky, M.Pd. Daeng Lewa
             </h1>
           </div>
           
           <p className="text-base text-white/95 leading-relaxed max-w-2xl drop-shadow-sm">
-            Saya adalah seorang <strong>guru matematika yang suka ngoding dan menulis</strong>. Saat ini, saya memfokuskan dedikasi penuh waktu saya secara remote sebagai <strong>Tutor Matematika di Algonova Dubai (UEA) dan waktu pagi hingga siang waktu saya penuh untuk keluarga di rumah</strong>. 
+            Saya adalah seorang <strong>guru matematika yang suka ngoding dan menulis</strong>. Saat ini, waktu sore hingga malam hari saya secara remote sebagai <strong>Tutor Matematika di Algonova Dubai (UEA). Adapun waktu subuh hingga siang hari saya dedikasikan untuk keluarga di rumah</strong>. 
           </p>
 
           <p className="text-sm text-[#5246ff] bg-white p-5 rounded-2xl shadow-lg font-medium leading-relaxed">
