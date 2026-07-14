@@ -8,9 +8,14 @@ export default function BookPromo() {
     spesifikasi: [
       { nama: "Penulis", nilai: "Alif Rezky, M.Pd." },
       { nama: "Bahasa", nilai: "Indonesia" },
+      { nama: "Desain Sampul dan Ilustrasi", nilai: "Ayu Rahmah, M.Pd." },
+      { nama: "Editor Bahasa", nilai: "Ruslan, M.Pd., Gr." },
+      { nama: "Pembaca Pruf", nilai: "Suratman, S.Pd." },
+      { nama: "Jumlah halaman", nilai: "127" },
+      { nama: "Lisensi", nilai: "CC BY-SA 3.0" },
       { nama: "Gaya Bahasa", nilai: "Santai, Humor Cerdas, Sentuhan Islami" },
       { nama: "Konten Fokus", nilai: "Logika Dasar & Konsep Fondasi Matematika" },
-      { nama: "Bonus Eksklusif", nilai: "Akses Video Pembahasan Matematika Dasar (SD-UTBK)" }
+      { nama: "Bonus Eksklusif", nilai: "Akses Video Pembahasan Matematika Dasar (SD--SMA)" }
     ]
   };
 
