@@ -13,12 +13,12 @@ export default function Home() {
     <main className="min-h-screen pt-16">
       <Navbar />
       <BookPromo /> {/* <-- Dipasang tepat sebelum HERO */}
+      <Testimonials />  
       <Hero />
       <Products />
       <Features />
       <Portfolio />
       <Achievements />
-      <Testimonials />
       <Footer />
     </main>
   );
