@@ -19,9 +19,9 @@ export default function Hero() {
               alt="Logo Kak Alif" 
               className="h-16 w-16 object-contain rounded-2xl bg-white/10 p-1.5 backdrop-blur-sm shadow-md"
             />
-            <h1 className="text-4xl font-extrabold sm:text-5xl leading-tight text-white drop-shadow-md">
+            <h2 className="text-4xl font-extrabold sm:text-5xl leading-tight text-white drop-shadow-md">
               Alif Rezky, M.Pd. Daeng Lewa
-            </h1>
+            </h2>
           </div>
           
           <p className="text-base text-white/95 leading-relaxed max-w-2xl drop-shadow-sm">
