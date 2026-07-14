@@ -10,9 +10,9 @@ export default function Navbar() {
         {/* Logo Gambar + Nama */}
         <a href="#" className="flex items-center gap-3 font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-indigo-200">
           <img 
-            src="/logoku.png" 
+            src="/favicon.png" 
             alt="Logo Alif Rezky" 
-            className="h-8 w-8 object-contain rounded-lg"
+            className="h-8 w-8 object-contain rounded-lg bg-white/10 p-0.5"
           />
           <span>Alif Rezky, M.Pd.</span>
         </a>
