@@ -24,7 +24,7 @@ export default function BookPromo() {
       <div className="container mx-auto px-6 max-w-5xl mt-8 relative z-10">
         <div className="grid md:grid-cols-12 gap-8 items-center bg-white/5 backdrop-blur-md rounded-3xl p-6 md:p-10 border border-white/10 shadow-xl">
           
-          {/* Kolom Kiri: Visual Buku ala E-commerce */}
+          {/* Kolom Kiri: Visual Buku Menggunakan buku-0.png */}
           <div className="md:col-span-5 flex flex-col items-center space-y-4">
             <div className="relative group bg-white/10 p-4 rounded-2xl border border-white/10 shadow-inner">
               <img 
@@ -41,7 +41,7 @@ export default function BookPromo() {
             </p>
           </div>
 
-          {/* Kolom Kanan: Detail & Keresahan Buku ala Gramedia/Yrama Widya */}
+          {/* Kolom Kanan: Detail & Keresahan Buku */}
           <div className="md:col-span-7 space-y-6">
             <div>
               <span className="text-[10px] font-bold uppercase tracking-widest text-amber-400 bg-amber-400/10 border border-amber-400/20 px-2.5 py-1 rounded-md">
