@@ -17,11 +17,12 @@ export default function Hero() {
           </h1>
           
           <p className="text-base text-white/95 leading-relaxed max-w-2xl drop-shadow-sm">
-            Saya adalah seorang <strong>guru matematika yang suka ngajar, ngoding dan nulis</strong>. Saat ini, saya memfokuskan sebagian waktu saya secara remote sebagai <strong>Tutor Matematika di Algonova Dubai (UEA). Adapun mulai 06.00--15.00 saya luangkan penuh untuk keluarga di rumah</strong>. 
+            Saya adalah seorang <strong>guru matematika yang suka ngoding dan menulis</strong>. Saat ini, saya memfokuskan dedikasi penuh waktu saya secara remote sebagai <strong>Tutor Matematika di Algonova Dubai (UEA) dan waktu pagi hingga siang waktu saya penuh untuk keluarga di rumah</strong>. 
           </p>
 
-          <p className="text-sm text-[#5246ff] bg-white p-5 rounded-2xl shadow-lg font-medium">
+          <p className="text-sm text-[#5246ff] bg-white p-5 rounded-2xl shadow-lg font-medium leading-relaxed">
             🏠 <strong>Komitmen Kerja:</strong> Saya sepenuhnya memilih untuk bekerja secara independen dari rumah (Full WFH) dan tidak lagi terikat secara offline di kantor atau lembaga konvensional lainnya. Jika bagi kebanyakan orang WFH adalah singkatan dari <em>Work from Home</em>, bagi saya pribadi WFH memiliki arti mendalam: <strong>Work for Hajj</strong>. Website ini hadir sebagai ruang digital mandiri dan <em>side hustle</em> profesional saya.
+          </p>
           
           <div className="flex flex-wrap gap-4 pt-2">
             <a href="#produk" className="rounded-2xl bg-white px-6 py-3.5 text-sm font-extrabold text-[#5246ff] shadow-md hover:bg-slate-50 hover:scale-[1.01] transition-all duration-200">
