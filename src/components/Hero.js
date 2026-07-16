@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_50%)]"></div>
       
       <div className="container mx-auto px-6 max-w-5xl relative z-10 grid md:grid-cols-12 gap-8 py-16">
-        <div className="md:col-span-9 flex flex-col justify-center space-y-6">
+        <div className="md:col-span-10 flex flex-col justify-center space-y-6">
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white bg-white/10 border border-white/20 px-3 py-1.5 rounded-full w-fit backdrop-blur-sm shadow-sm">
             🌐 Professional Remote Educator &amp; Web Dev
           </span>
@@ -27,6 +27,17 @@ export default function Hero() {
           <p className="text-base text-white/95 leading-relaxed max-w-2xl drop-shadow-sm">
             Saya adalah seorang <strong>guru matematika yang suka ngoding dan menulis</strong>. Saat ini, waktu sore hingga malam hari saya secara remote sebagai <strong>Tutor Matematika di Algonova Dubai (UEA). Adapun waktu subuh hingga siang hari saya dedikasikan untuk keluarga di rumah</strong>. 
           </p>
+
+          {/* BANNER MINI WIDGET KE HALAMAN TRYOUT */}
+          <div className="bg-amber-400 text-slate-950 p-4 rounded-2xl shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-amber-300">
+            <div className="text-left">
+              <h4 className="font-black text-sm sm:text-base">🔥 Fitur Baru: Mini TryOut Mandiri TKA 2026</h4>
+              <p className="text-xs text-slate-800 font-medium">Uji kemampuan logika dasar &amp; persamaan lingkaran Anda, dapatkan analisis skor instan!</p>
+            </div>
+            <a href="/tryout" className="whitespace-nowrap bg-slate-950 text-white font-extrabold text-xs px-4 py-2.5 rounded-xl shadow hover:bg-slate-900 transition-all active:scale-95">
+              Mulai Kuis &rarr;
+            </a>
+          </div>
 
           <p className="text-sm text-[#5246ff] bg-white p-5 rounded-2xl shadow-lg font-medium leading-relaxed">
             🏠 <strong>Komitmen Kerja:</strong> Saya sepenuhnya memilih untuk bekerja secara independen dari rumah (Full WFH) dan tidak lagi terikat secara offline di kantor atau lembaga konvensional lainnya. Jika bagi kebanyakan orang WFH adalah singkatan dari <em>Work from Home</em>, bagi saya pribadi WFH memiliki arti mendalam: <strong>Work for Hajj</strong>. Website ini hadir sebagai ruang digital mandiri dan <em>side hustle</em> profesional saya.
