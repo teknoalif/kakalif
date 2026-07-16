@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export default function TryOutPage() {
+  // DATA SOAL DENGAN PEMBAHASAN TEKS BERSIH (TANPA DOLAR)
   const daftarSoal = [
     {
       id: 1,
@@ -18,7 +19,7 @@ export default function TryOutPage() {
       ],
       kunci: 0,
       rekomendasiVideo: "https://youtu.be/-NABrFzoP2w",
-      pembahasan: "Langkah 1: Jarak titik ke garis singgung lingkaran menghasilkan r = 1.\nLangkah 2: Masukkan ke $(x+1)^2 + (y-1)^2 = 1^2 \\implies x^2 + y^2 + 2x - 2y + 1 = 0$ (Opsi A)."
+      pembahasan: "Langkah 1: Cari jari-jari (r) menggunakan rumus jarak titik pusat P(x1, y1) ke garis ax + by + c = 0.\nr = | (a.x1 + b.y1 + c) / √(a² + b²) |\nr = | (3(-1) + (-4)(1) + 12) / √(3² + (-4)²) |\nr = | (-3 - 4 + 12) / √25 | = | 5 / 5 | = 1\n\nLangkah 2: Masukkan ke rumus standar persamaan lingkaran (x - h)² + (y - k)² = r² dengan pusat (-1, 1):\n==> (x - (-1))² + (y - 1)² = 1²\n==> (x + 1)² + (y - 1)² = 1\n==> x² + 2x + 1 + y² - 2y + 1 = 1\n==> x² + y² + 2x - 2y + 1 = 0 (Pilihan A)."
     },
     {
       id: 2,
@@ -31,18 +32,18 @@ export default function TryOutPage() {
         "D. 4√3 + 7",
         "E. 1"
       ],
-      kunci: 0, // A
+      kunci: 0,
       rekomendasiVideo: "https://www.youtube.com/watch?v=-9JjnKEXp2Q",
-      pembahasan: "Langkah 1: Menggunakan sifat relasi kuadran vertikal, nilai $cot(105^\\circ) = -tan(15^\\circ)$.\nLangkah 2: Operasi menjadi $-tan^2(15^\\circ)$. Nilai $tan(15^\\circ) = 2 - \\sqrt{3}$.\nLangkah 3: Kuadratkan dan kalikan negatif: $-(2 - \\sqrt{3})^2 = -(4 - 4\\sqrt{3} + 3) = 4\\sqrt{3} - 7$ (Opsi A)."
+      pembahasan: "Langkah 1: Menggunakan sifat relasi kuadran vertikal, nilai cot(105°) setara dengan -tan(15°).\nLangkah 2: Operasi perkalian pada soal berubah menjadi: -tan²(15°).\nLangkah 3: Menggunakan rumus selisih dua sudut tan(45° - 30°), didapatkan nilai tan(15°) = 2 - √3.\nLangkah 4: Kuadratkan nilai tersebut lalu kalikan dengan minus:\n==> -(2 - √3)²\n==> -(4 - 4√3 + 3)\n==> -(7 - 4√3)\n==> 4√3 - 7 (Pilihan A)."
     },
     {
       id: 3,
       kategori: "Peluang Permutasi",
       tanya: "Enam anak yang terdiri atas 3 laki-laki dan 3 perempuan duduk berjajar. Peluang ketiga anak perempuan duduk selalu berdampingan adalah...",
       opsi: ["A. 1/5", "B. 2/5", "C. 3/5", "D. 1/2", "E. 1/6"],
-      kunci: 0, // A
+      kunci: 0,
       rekomendasiVideo: "https://www.youtube.com/watch?v=y7RxTdiJ7Kg",
-      pembahasan: "Langkah 1: Anggota ruang sampel total $n(S) = 6! = 720$.\nLangkah 2: Anggap 3 perempuan sebagai 1 grup objek. Total objek menjadi $3 + 1 = 4$ objek ($4! = 24$). Di dalam grup perempuan sendiri dapat bertukar posisi sebanyak $3! = 6$ cara.\nLangkah 3: Peluang $P(A) = \\frac{24 \\times 6}{720} = \\frac{144}{720} = \\frac{1}{5}$ atau 0.2 (Opsi A)."
+      pembahasan: "Langkah 1: Cari ruang sampel total n(S) posisi duduk 6 anak: 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720 cara.\nLangkah 2: Ikat 3 anak perempuan menjadi '1 grup objek tetap'. Sekarang total objek yang disusun menjadi 3 laki-laki + 1 grup = 4 objek. Banyak caranya adalah 4! = 24 cara.\nLangkah 3: Di dalam grup perempuan sendiri, mereka bisa saling bertukar posisi duduk sebanyak 3! = 6 cara.\nLangkah 4: Hitung total kejadian n(A) = 24 × 6 = 144 cara.\nLangkah 5: Peluang P(A) = n(A) / n(S) = 144 / 720 = 1/5 atau jika didesimalkan bernilai 0,2 (Pilihan A)."
     }
   ];
 
@@ -77,12 +78,12 @@ export default function TryOutPage() {
   };
 
   const downloadJadwalBerkah = () => {
-    const isiTeks = `=====================================================\nTEMPLAT RENCANA BELAJAR BERKAH (RUMAATUN & KAK ALIF)\n=====================================================\n\nJADWAL HARIAN ADAPTIF:\n-----------------------------------------------------\n04.30 - 05.30 | Shalat Subuh & Dzikir Pagi\n05.30 - 07.00 | Misi Mandiri 1: Pemahaman Konsep Matematika\n07.00 - 08.00 | Istirahat & Keluarga\n08.00 - 11.30 | Misi Mandiri 2: Implementasi Coding & Latihan\n11.30 - 13.00 | Shalat Dzuhur, Makan & Qailulah (Tidur Siang)\n13.00 - 15.00 | Misi Mandiri 3: Review Portofolio / Menulis\n15.00 - 16.00 | Jeda Shalat Ashar & Sore\n16.00 - 17.30 | Evaluasi Soal & Nonton Rekomendasi Video\n17.30 - 19.30 | Maghrib & Isya\n19.30 - 21.00 | Membaca Buku "Matematika Itu Asyik"\n21.00 - Rehat  | Istirahat Total`;
+    const isiTeks = `=====================================================\nTEMPLAT RENCANA BELAJAR BERKAH (RUMATUN & KAK ALIF)\n=====================================================\n\nJADWAL HARIAN ADAPTIF:\n-----------------------------------------------------\n04.30 - 05.30 | Shalat Subuh & Dzikir Pagi\n05.30 - 07.00 | Misi Mandiri 1: Pemahaman Konsep Matematika\n07.00 - 08.00 | Istirahat & Keluarga\n08.00 - 11.30 | Misi Mandiri 2: Implementasi Coding & Latihan\n11.30 - 13.00 | Shalat Dzuhur, Makan & Qailulah (Tidur Siang)\n13.00 - 15.00 | Misi Mandiri 3: Review Portofolio / Menulis\n15.00 - 16.00 | Jeda Shalat Ashar & Sore\n16.00 - 17.30 | Evaluasi Soal & Nonton Rekomendasi Video\n17.30 - 19.30 | Maghrib & Isya\n19.30 - 21.00 | Membaca Buku "Matematika Itu Asyik"\n21.00 - Rehat  | Istirahat Total`;
     const blob = new Blob([isiTeks], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Rencana_Belajar_Berkah_Rumaatun.txt';
+    link.download = 'Rencana_Belajar_Berkah_Rumatun.txt';
     link.click();
     URL.revokeObjectURL(url);
   };
@@ -107,11 +108,11 @@ export default function TryOutPage() {
       <div className="container mx-auto px-6 max-w-5xl pt-28 pb-16 space-y-12">
         
         <div className="border-b border-zinc-850 pb-6">
-          <h1 className="text-3xl font-black text-white sm:text-4xl tracking-tight">Pusat Misi Mandiri TKA &amp; Rumaatun Ecosystem</h1>
+          <h1 className="text-3xl font-black text-white sm:text-4xl tracking-tight">Pusat Misi Mandiri TKA &amp; Rumatun Ecosystem</h1>
           <p className="text-sm text-zinc-400 mt-2">Persiapan Akselerasi Menuju Ujian Akademik Oktober 2026.</p>
         </div>
 
-        {/* JALUR MISI BELAJAR DENGAN LINK VIDEO ASLI KAK ALIF */}
+        {/* JALUR MISI BELAJAR */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-xl">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
             <div>
@@ -163,7 +164,7 @@ export default function TryOutPage() {
           </button>
         </div>
 
-        {/* TRY-OUT BOX PREVIEW */}
+        {/* KUIS BOX */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 md:p-10 shadow-xl space-y-8">
           <div>
             <span className="text-[10px] font-bold tracking-widest text-white/50 bg-white/5 border border-white/10 px-2.5 py-1 rounded">SIMULASI TKA MANDIRI</span>
@@ -200,7 +201,7 @@ export default function TryOutPage() {
             </div>
           )}
 
-          {/* LIST SOAL DENGAN WARNA PASCA SUBMIT */}
+          {/* LIST SOAL */}
           <div className="space-y-8 border-t border-zinc-800/60 pt-6">
             {daftarSoal.map((soal, sIdx) => (
               <div key={soal.id} className="space-y-4 border-b border-zinc-800/40 pb-6 last:border-0">
@@ -242,10 +243,13 @@ export default function TryOutPage() {
                   })}
                 </div>
 
+                {/* PEMBAHASAN DENGAN TAMPILAN TEXT BERSIH */}
                 {sudahSubmit && (
                   <div className="mt-4 p-4 rounded-xl bg-zinc-950 border border-zinc-850 space-y-2 text-xs md:text-sm">
                     <h4 className="font-extrabold text-amber-400 flex items-center gap-1.5">💡 Solusi Penjabaran Rumus:</h4>
-                    <p className="whitespace-pre-line text-zinc-300 font-mono bg-zinc-900/50 p-3 rounded-lg border border-zinc-800/40">{soal.pembahasan}</p>
+                    <p className="whitespace-pre-line text-zinc-300 leading-relaxed bg-zinc-900/30 p-4 rounded-xl border border-zinc-800/60 font-medium">
+                      {soal.pembahasan}
+                    </p>
                   </div>
                 )}
               </div>
