@@ -4,13 +4,14 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export default function TryOutPage() {
-  // Masukkan URL Web App dari Google Apps Script Anda di sini nanti
-  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxRCRazFCmk256qpO64d3s-oYbZ1sQESHPaN1g8axherZMj8CFv69Z0tOX_9lHRTy2C/exec";
+  // Ganti dengan URL Google Apps Script Anda yang sudah aktif
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxRCRazFCmk256qp064d3s-oYbZ1sQESHPaN1g8axherZMj8CFv69Z0tOX_91HRTy2C/exec";
 
-  // Data Soal Mandiri
+  // DATA 8 SOAL: 3 SOAL UTBK + 5 SOAL BARU TKA
   const daftarSoal = [
     {
       id: 1,
+      jenis: "UTBK",
       kategori: "Persamaan Lingkaran",
       tanya: "Persamaan lingkaran yang berpusat di P(-1, 1) dan menyinggung garis 3x - 4y + 12 = 0 adalah...",
       opsi: [
@@ -22,10 +23,11 @@ export default function TryOutPage() {
       ],
       kunci: 0,
       rekomendasiVideo: "https://youtu.be/-NABrFzoP2w",
-      pembahasan: "Langkah 1: Jarak titik ke garis singgung lingkaran menghasilkan nilai jari-jari (r) = 1.\nLangkah 2: Masukkan ke rumus standar persamaan lingkaran (x - h)² + (y - k)² = r² dengan pusat (-1, 1):\n==> (x - (-1))² + (y - 1)² = 1²\n==> (x + 1)² + (y - 1)² = 1\n==> x² + 2x + 1 + y² - 2y + 1 = 1\n==> x² + y² + 2x - 2y + 1 = 0 (Pilihan A)."
+      pembahasan: "Langkah 1: Cari jari-jari (r) menggunakan rumus jarak titik pusat P(x1, y1) ke garis ax + by + c = 0.\nr = | (a.x1 + b.y1 + c) / √(a² + b²) |\nr = | (3(-1) + (-4)(1) + 12) / √(3² + (-4)²) |\nr = | (-3 - 4 + 12) / √25 | = | 5 / 5 | = 1\n\nLangkah 2: Masukkan ke rumus standar (x - h)² + (y - k)² = r² dengan pusat (-1, 1):\n==> (x - (-1))² + (y - 1)² = 1²\n==> (x + 1)² + (y - 1)² = 1\n==> x² + 2x + 1 + y² - 2y + 1 = 1\n==> x² + y² + 2x - 2y + 1 = 0 (Pilihan A)."
     },
     {
       id: 2,
+      jenis: "UTBK",
       kategori: "Trigonometri",
       tanya: "Nilai dari hasil operasi perkalian trigonometri dasar: cot(105°) × tan(15°) adalah...",
       opsi: [
@@ -37,21 +39,85 @@ export default function TryOutPage() {
       ],
       kunci: 0,
       rekomendasiVideo: "https://www.youtube.com/watch?v=-9JjnKEXp2Q",
-      pembahasan: "Langkah 1: Menggunakan sifat relasi kuadran vertikal, nilai cot(105°) setara dengan -tan(15°).\nLangkah 2: Operasi perkalian pada soal berubah menjadi: -tan²(15°).\nLangkah 3: Menggunakan rumus selisih dua sudut tan(45° - 30°), didapatkan nilai tan(15°) = 2 - √3.\nLangkah 4: Kuadratkan nilai tersebut lalu kalikan dengan minus:\n==> -(2 - √3)²\n==> -(4 - 4√3 + 3)\n==> -(7 - 4√3)\n==> 4√3 - 7 (Pilihan A)."
+      pembahasan: "Langkah 1: Menggunakan sifat relasi kuadran vertikal, nilai cot(105°) setara dengan -tan(15°).\nLangkah 2: Operasi perkalian pada soal berubah menjadi: -tan²(15°).\nLangkah 3: Menggunakan rumus selisih dua sudut tan(45° - 30°), didapatkan nilai tan(15°) = 2 - √3.\nLangkah 4: Kuadratkan nilai tersebut lalu kalikan dengan minus:\n==> -(2 - √3)¹\n==> -(4 - 4√3 + 3)\n==> -(7 - 4√3)\n==> 4√3 - 7 (Pilihan A)."
     },
     {
       id: 3,
+      jenis: "UTBK",
       kategori: "Peluang Permutasi",
       tanya: "Enam anak yang terdiri atas 3 laki-laki dan 3 perempuan duduk berjajar. Peluang ketiga anak perempuan duduk selalu berdampingan adalah...",
       opsi: ["A. 1/5", "B. 2/5", "C. 3/5", "D. 1/2", "E. 1/6"],
       kunci: 0,
       rekomendasiVideo: "https://www.youtube.com/watch?v=y7RxTdiJ7Kg",
-      pembahasan: "Langkah 1: Cari ruang sampel total n(S) posisi duduk 6 anak: 6! = 720 cara.\nLangkah 2: Ikat 3 anak perempuan menjadi '1 grup objek tetap'. Sekarang total objek yang disusun menjadi 3 laki-laki + 1 grup = 4 objek (4! = 24 cara).\nLangkah 3: Di dalam grup perempuan sendiri, mereka bisa saling bertukar posisi duduk sebanyak 3! = 6 cara.\nLangkah 4: Hitung total kejadian n(A) = 24 × 6 = 144 cara.\nLangkah 5: Peluang P(A) = n(A) / n(S) = 144 / 720 = 1/5 atau jika didesimalkan bernilai 0,2 (Pilihan A)."
+      pembahasan: "Langkah 1: Cari ruang sampel total n(S) posisi duduk 6 anak: 6! = 720 cara.\nLangkah 2: Ikat 3 anak perempuan menjadi '1 grup objek tetap'. Sekarang total objek yang disusun menjadi 3 laki-laki + 1 grup = 4 objek. Banyak caranya adalah 4! = 24 cara.\nLangkah 3: Di dalam grup perempuan sendiri, mereka bisa saling bertukar posisi duduk sebanyak 3! = 6 cara.\nLangkah 4: Hitung total kejadian n(A) = 24 × 6 = 144 cara.\nLangkah 5: Peluang P(A) = n(A) / n(S) = 144 / 720 = 1/5 atau jika didesimalkan bernilai 0,2 (Pilihan A)."
+    },
+    {
+      id: 4,
+      jenis: "TKA",
+      kategori: "Logaritma Lanjutan",
+      tanya: "Jika jika ²log 3 = a dan ³log 5 = b, maka nilai dari ⁶log 15 adalah...",
+      opsi: [
+        "A. (a + b) / (1 + a)",
+        "B. a(1 + b) / (1 + a)",
+        "C. (1 + b) / (1 + a)",
+        "D. a(1 + b) / a",
+        "E. (1 + ab) / (1 + a)"
+      ],
+      kunci: 1,
+      rekomendasiVideo: "https://youtu.be/-NABrFzoP2w",
+      pembahasan: "Langkah 1: Gunakan sifat logaritma x_log y = ³log y / ³log x.\nLangkah 2: Ubah basis ⁶log 15 menggunakan basis 3 yang paling banyak muncul.\n==> ⁶log 15 = ³log 15 / ³log 6\n==> ³log (3 × 5) / ³log (2 × 3)\n==> (³log 3 + ³log 5) / (³log 2 + ³log 3)\nLangkah 3: Substitusikan nilai a dan b. Ingat ³log 2 = 1 / ²log 3 = 1/a.\n==> (1 + b) / (1/a + 1)\n==> (1 + b) / ((1 + a)/a)\n==> a(1 + b) / (1 + a) (Pilihan B)."
+    },
+    {
+      id: 5,
+      jenis: "TKA",
+      kategori: "Turunan Fungsi Aljabar",
+      tanya: "Turunan pertama dari fungsi f(x) = (2x² - 3)³ adalah f'(x) = ...",
+      opsi: [
+        "A. 3(2x² - 3)²",
+        "B. 4x(2x² - 3)²",
+        "C. 12x(2x² - 3)²",
+        "D. 12x²(2x² - 3)²",
+        "E. 6x(2x² - 3)²"
+      ],
+      kunci: 2,
+      rekomendasiVideo: "https://youtu.be/-NABrFzoP2w",
+      pembahasan: "Langkah 1: Gunakan aturan rantai turunan fungsi komposisi. Jika f(x) = [u(x)]^n, maka f'(x) = n · [u(x)]^(n-1) · u'(x).\nLangkah 2: Tentukan u(x) = 2x² - 3, sehingga u'(x) = 4x. Nilai pangkat n = 3.\nLangkah 3: Aplikasikan ke rumus:\n==> f'(x) = 3 · (2x² - 3)^(3-1) · (4x)\n==> f'(x) = 3 · (2x² - 3)² · 4x\n==> f'(x) = 12x(2x² - 3)² (Pilihan C)."
+    },
+    {
+      id: 6,
+      jenis: "TKA",
+      kategori: "Integral Tentu",
+      tanya: "Nilai dari ∫ (dari 0 sampai 2) (3x² - 2x + 1) dx adalah...",
+      opsi: ["A. 4", "B. 5", "C. 6", "D. 7", "E. 8"],
+      kunci: 2,
+      rekomendasiVideo: "https://youtu.be/-NABrFzoP2w",
+      pembahasan: "Langkah 1: Cari antiturunan (integral tak tentu) dari fungsi 3x² - 2x + 1.\n==> F(x) = (3/3)x³ - (2/2)x² + 1x = x³ - x² + x\nLangkah 2: Evaluasi nilai integral tentu menggunakan batas atas (2) dan batas bawah (0).\n==> F(2) = (2)³ - (2)² + 2 = 8 - 4 + 2 = 6\n==> F(0) = (0)³ - (0)² + 0 = 0\nLangkah 3: Hitung nilai akhirnya: F(2) - F(0) = 6 - 0 = 6 (Pilihan C)."
+    },
+    {
+      id: 7,
+      jenis: "TKA",
+      kategori: "Vektor",
+      tanya: "Diketahui vektor u = 2i + j - 2k dan v = i + 2j + 2k. Besar sudut yang dibentuk oleh kedua vektor tersebut adalah...",
+      opsi: ["A. 0°", "B. 30°", "C. 45°", "D. 60°", "E. 90°"],
+      kunci: 4,
+      rekomendasiVideo: "https://youtu.be/-NABrFzoP2w",
+      pembahasan: "Langkah 1: Gunakan rumus perkalian titik (dot product) untuk mencari nilai cosinus sudut (θ):\ncos θ = (u · v) / (|u| · |v|)\nLangkah 2: Hitung perkalian u · v = (2 × 1) + (1 × 2) + (-2 × 2) = 2 + 2 - 4 = 0.\nLangkah 3: Karena hasil perkalian titik pembilangnya bernilai 0, maka cos θ = 0 / (|u| · |v|) = 0.\nLangkah 4: Cari sudut yang nilai cosinusnya 0. Nilai θ = 90° (Kedua vektor saling tegak lurus / ortogonal) (Pilihan E)."
+    },
+    {
+      id: 8,
+      jenis: "TKA",
+      kategori: "Matriks Lanjutan",
+      tanya: "Jika matriks A = [[2, 1], [4, 3]], maka nilai dari determinan matriks invers A⁻¹ adalah...",
+      opsi: ["A. 2", "B. 1/2", "C. 4", "D. 1/4", "E. -2"],
+      kunci: 1,
+      rekomendasiVideo: "https://youtu.be/-NABrFzoP2w",
+      pembahasan: "Langkah 1: Cari nilai determinan matriks A terlebih dahulu.\ndet(A) = (ad - bc) = (2 × 3) - (1 × 4) = 6 - 4 = 2.\nLangkah 2: Gunakan sifat dasar determinan matriks invers, yaitu det(A⁻¹) = 1 / det(A).\nLangkah 3: Maka det(A⁻¹) = 1 / 2 (Pilihan B)."
     }
   ];
 
-  // Identitas Siswa States
+  // Identitas States & Error Messages
   const [identitas, setIdentitas] = useState({ nama: '', sekolah: '', kelas: '' });
+  const [errorValidasi, setErrorValidasi] = useState({ nama: '', sekolah: '', kelas: '' });
   const [formSelesai, setFormSelesai] = useState(false);
   const [isSending, setIsSending] = useState(false);
 
@@ -60,6 +126,34 @@ export default function TryOutPage() {
   const [sudahSubmit, setSudahSubmit] = useState(false);
   const [skor, setSkor] = useState(0);
   const [kategoriSalah, setKategoriSalah] = useState([]);
+
+  // LOGIKA VALIDASI INPUT REAL-TIME
+  const handleInputIdentitas = (field, value) => {
+    let errText = '';
+    
+    if (field === 'nama') {
+      // Regex untuk memvalidasi hanya huruf dan spasi
+      const regexHuruf = /^[a-zA-Z\s]*$/;
+      if (!regexHuruf.test(value)) {
+        errText = '⚠️ Nama wajib diisi menggunakan huruf saja!';
+      }
+    } else if (field === 'sekolah') {
+      if (value.length > 0 && value.length < 5) {
+        errText = '⚠️ Nama sekolah minimal diisi 5 karakter!';
+      }
+    } else if (field === 'kelas') {
+      if (value.length > 10) {
+        errText = '⚠️ Penulisan kelas maksimal 10 karakter!';
+      }
+    }
+
+    setErrorValidasi(prev => ({ ...prev, [field]: errText }));
+    setIdentitas(prev => ({ ...prev, [field]: value }));
+  };
+
+  const tobolStartDisabled = 
+    !identitas.nama || !identitas.sekolah || !identitas.kelas ||
+    errorValidasi.nama || errorValidasi.sekolah || errorValidasi.kelas;
 
   const handlePilihJawaban = (soalId, opsiIdx) => {
     if (sudahSubmit) return;
@@ -74,8 +168,8 @@ export default function TryOutPage() {
       if (jawabanUser[soal.id] === soal.kunci) {
         nilaiBenar += 1;
       } else {
-        const itemKategori = { nama: soal.kategori, link: soal.rekomendasiVideo };
-        if (!salahKategori.some(e => e.nama === soal.kategori)) {
+        const itemKategori = { nama: `${soal.jenis} - ${soal.kategori}`, link: soal.rekomendasiVideo };
+        if (!salahKategori.some(e => e.nama === itemKategori.nama)) {
           salahKategori.push(itemKategori);
         }
       }
@@ -87,7 +181,6 @@ export default function TryOutPage() {
     setSudahSubmit(true);
     setIsSending(true);
 
-    // KIRIM DATA KE GOOGLE SPREADSHEET (APPS SCRIPT)
     try {
       await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
@@ -108,19 +201,6 @@ export default function TryOutPage() {
     }
   };
 
-  const [progresMisi, setProgresMisi] = useState(33);
-  const [misiSelesai, setMisiSelesai] = useState({ bab1: true, bab2: false, bab3: false });
-
-  const handleToggleMisi = (babKey, nilaiBeban) => {
-    const statusBaru = !misiSelesai[babKey];
-    setMisiSelesai({ ...misiSelesai, [babKey]: statusBaru });
-    if (statusBaru) {
-      setProgresMisi((prev) => Math.min(prev + nilaiBeban, 100));
-    } else {
-      setProgresMisi((prev) => Math.max(prev - nilaiBeban, 0));
-    }
-  };
-
   return (
     <div className="bg-zinc-950 text-white min-h-screen font-sans">
       <Navbar />
@@ -131,7 +211,7 @@ export default function TryOutPage() {
           <p className="text-sm text-zinc-400 mt-2">Persiapan Akselerasi Menuju Ujian Akademik Oktober 2026.</p>
         </div>
 
-        {/* 1. LAYER FORM IDENTITAS (DIRENDER SEBELUM KUIS) */}
+        {/* 1. LAYER COMPONENT: VALIDASI DENGAN ALUR LOGIKA KETAT */}
         {!formSelesai ? (
           <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 md:p-10 max-w-xl mx-auto shadow-2xl space-y-6">
             <div className="text-center">
@@ -145,68 +225,65 @@ export default function TryOutPage() {
                 <input 
                   type="text" 
                   value={identitas.nama} 
-                  onChange={(e) => setIdentitas({...identitas, nama: e.target.value})}
+                  onChange={(e) => handleInputIdentitas('nama', e.target.value)}
                   placeholder="Contoh: Uwais Abdussalam" 
-                  className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-500 text-white"
+                  className={`w-full bg-zinc-950 border rounded-xl px-4 py-3 text-sm focus:outline-none text-white transition-colors ${errorValidasi.nama ? 'border-red-500' : 'border-zinc-800 focus:border-cyan-500'}`}
                 />
+                {errorValidasi.nama && <p className="text-xs text-red-400 mt-1 font-semibold">{errorValidasi.nama}</p>}
               </div>
+
               <div>
                 <label className="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Asal Sekolah</label>
                 <input 
                   type="text" 
                   value={identitas.sekolah} 
-                  onChange={(e) => setIdentitas({...identitas, sekolah: e.target.value})}
+                  onChange={(e) => handleInputIdentitas('sekolah', e.target.value)}
                   placeholder="Contoh: SMA Negeri 1 Maros" 
-                  className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-500 text-white"
+                  className={`w-full bg-zinc-950 border rounded-xl px-4 py-3 text-sm focus:outline-none text-white transition-colors ${errorValidasi.sekolah ? 'border-red-500' : 'border-zinc-800 focus:border-cyan-500'}`}
                 />
+                {errorValidasi.sekolah && <p className="text-xs text-red-400 mt-1 font-semibold">{errorValidasi.sekolah}</p>}
               </div>
+
               <div>
                 <label className="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-1">Kelas</label>
                 <input 
                   type="text" 
                   value={identitas.kelas} 
-                  onChange={(e) => setIdentitas({...identitas, kelas: e.target.value})}
+                  onChange={(e) => handleInputIdentitas('kelas', e.target.value)}
                   placeholder="Contoh: 12 MIPA / Gap Year" 
-                  className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-500 text-white"
+                  className={`w-full bg-zinc-950 border rounded-xl px-4 py-3 text-sm focus:outline-none text-white transition-colors ${errorValidasi.kelas ? 'border-red-500' : 'border-zinc-800 focus:border-cyan-500'}`}
                 />
+                {errorValidasi.kelas && <p className="text-xs text-red-400 mt-1 font-semibold">{errorValidasi.kelas}</p>}
               </div>
             </div>
 
             <button 
               onClick={() => setFormSelesai(true)}
-              disabled={!identitas.nama || !identitas.sekolah || !identitas.kelas}
+              disabled={tobolStartDisabled}
               className={`w-full rounded-xl py-3.5 text-xs sm:text-sm font-black transition-all ${
-                !identitas.nama || !identitas.sekolah || !identitas.kelas
+                tobolStartDisabled
                   ? 'bg-zinc-800 text-zinc-500 cursor-not-allowed border border-zinc-700'
-                  : 'bg-white hover:bg-slate-100 text-slate-950 font-extrabold shadow-md'
+                  : 'bg-white hover:bg-slate-100 text-slate-950 font-extrabold shadow-md active:scale-[0.99]'
               }`}
             >
               Mulai Misi Simulasi Kuis &rarr;
             </button>
           </div>
         ) : (
-          /* 2. MAIN INTERACTIVE DASHBOARD (DIRENDER SETELAH VALIDASI IDENTITAS) */
+          /* 2. MAIN INTERACTIVE TRYOUT COMPONENT */
           <>
-            {/* JALUR MISI BELAJAR */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-xl">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">Peserta: {identitas.nama} ({identitas.sekolah})</span>
-                  <h3 className="text-lg font-bold text-white mt-1">🚀 Jalur Misi Belajar Anda (Learning Journey)</h3>
+                  <span className="text-[10px] uppercase font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">Peserta: {identitas.nama} ({identitas.sekolah} - {identitas.kelas})</span>
+                  <h3 className="text-lg font-bold text-white mt-1">🚀 Ujian Akselerasi Berjalan Mandiri</h3>
                 </div>
-                <span className="text-xl font-black text-cyan-400">{progresMisi}% Selesai</span>
               </div>
-              <div className="w-full bg-zinc-800 h-3 rounded-full overflow-hidden mb-6">
-                <div className="bg-gradient-to-r from-cyan-500 to-[#5246ff] h-full transition-all" style={{ width: `${progresMisi}%` }}></div>
-              </div>
-              {/* Checklist inputs omitted for brevity, same as previous screen */}
             </div>
 
-            {/* KUIS BOX */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 md:p-10 shadow-xl space-y-8">
-              <div>
-                <span className="text-[10px] font-bold tracking-widest text-white/50 bg-white/5 border border-white/10 px-2.5 py-1 rounded">SIMULASI TKA MANDIRI</span>
-                <h2 className="text-xl md:text-2xl font-black text-white mt-3">Kuis Mini Terarah: Menguji Logika Fondasi untuk TKA 2026 dan UTBK 2027</h2>
+              <div className="flex justify-between items-center">
+                <h2 className="text-xl md:text-2xl font-black text-white">8 Paket Soal Terpadu (3 UTBK + 5 TKA Matematika)</h2>
               </div>
 
               {sudahSubmit && (
@@ -221,18 +298,40 @@ export default function TryOutPage() {
                   <div className="md:col-span-8 space-y-3">
                     <h4 className="text-sm font-bold text-zinc-200">🤖 Analisis Review Adaptif Terminator:</h4>
                     {isSending ? (
-                      <p className="text-xs text-amber-400 font-semibold animate-pulse">⏳ Menyimpan lembar jawaban ke Cloud Spreadsheet...</p>
+                      <p className="text-xs text-amber-400 font-semibold animate-pulse">⏳ Menyimpan data diri dan lembar jawaban ke Cloud Spreadsheet...</p>
                     ) : (
-                      <p className="text-xs text-emerald-400 font-semibold">✓ Nilai berhasil dikunci dan dikirim ke sistem guru!</p>
+                      <div className="space-y-2">
+                        <p className="text-xs text-emerald-400 font-semibold">✓ Lembar jawaban berhasil dikirim ke Spreadsheet Guru!</p>
+                        {kategoriSalah.length > 0 && (
+                          <div className="flex flex-col gap-1 pt-1">
+                            <p className="text-[11px] text-zinc-400">Rekomendasi ulasan video salah:</p>
+                            {kategoriSalah.map((kat, idx) => (
+                              <a key={idx} href={kat.link} target="_blank" rel="noopener noreferrer" className="text-xs text-cyan-400 font-bold hover:underline">
+                                📺 {kat.nama} &rarr;
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>
               )}
 
-              {/* DAFTAR SOAL RENDER LOOP */}
+              {/* DAFTAR SOAL RENDER LOOP DENGAN BADGE JENIS */}
               <div className="space-y-8 border-t border-zinc-800/60 pt-6">
                 {daftarSoal.map((soal, sIdx) => (
                   <div key={soal.id} className="space-y-4 border-b border-zinc-800/40 pb-6 last:border-0">
+                    <div className="flex items-center gap-2">
+                      <span className={`text-[9px] font-black px-2 py-0.5 rounded tracking-wider border ${
+                        soal.jenis === 'TKA' 
+                          ? 'bg-purple-500/10 border-purple-500/30 text-purple-400' 
+                          : 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400'
+                      }`}>
+                        {soal.jenis} - {soal.kategori}
+                      </span>
+                    </div>
+
                     <h3 className="text-sm md:text-base font-bold text-zinc-100 flex gap-2 items-start">
                       <span>{sIdx + 1}.</span>
                       <span>{soal.tanya}</span>
