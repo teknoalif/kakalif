@@ -206,7 +206,7 @@ export default function TryOutPage() {
             <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 md:p-10 shadow-xl space-y-8">
               <div>
                 <span className="text-[10px] font-bold tracking-widest text-white/50 bg-white/5 border border-white/10 px-2.5 py-1 rounded">SIMULASI TKA MANDIRI</span>
-                <h2 className="text-xl md:text-2xl font-black text-white mt-3">Kuis Mini Terarah: Menguji Logika Fondasi TKA 2026 dan UTBK 2027</h2>
+                <h2 className="text-xl md:text-2xl font-black text-white mt-3">Kuis Mini Terarah: Menguji Logika Fondasi untuk TKA 2026 dan UTBK 2027</h2>
               </div>
 
               {sudahSubmit && (
