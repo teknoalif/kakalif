@@ -5,15 +5,15 @@ export default function RumaatunPromo() {
   const [showVideo, setShowVideo] = useState(false);
 
   const courseDetail = {
-    platform: "RUMAATUN",
-    judul: "Mastering UTBK SNBT & Logika Matematika dari Nol",
+    platform: "RUMATUN",
+    judul: "Mastering TKA 2026 & UTBK 2027",
     tahun: "2026",
-    jumlahVideo: "42 Episode",
+    jumlahVideo: "100+ Episode",
     resolusi: "Full HD",
-    kategori: "Semua Umur",
+    kategori: "Untuk anak usia 7 sampai 17 tahun",
     deskripsi: "Sebuah ekosistem belajar interaktif yang dirancang khusus untuk mendobrak batasan belajar matematika dan pemrograman. Melalui pendekatan visual yang ramah otak, Anda akan diajak memahami logika dasar matematika secara intuitif, lalu menerapkannya langsung ke dalam baris kode nyata tanpa rasa takut.",
     tutor: "Alif Rezky, M.Pd. (Kak Alif)",
-    topik: "Materi Persiapan UTBK SNBT 2027, Persamaan Lingkaran, Logika Matematika",
+    topik: "Materi Persiapan UTBK 2027, TKA 2026, Matematika Dasar",
     karakteristik: "Sistematis, Interaktif, Ramah Pemula"
   };
 
