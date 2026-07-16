@@ -39,7 +39,7 @@ export default function TryOutPage() {
       ],
       kunci: 0,
       rekomendasiVideo: "https://www.youtube.com/watch?v=-9JjnKEXp2Q",
-      pembahasan: "Langkah 1: Menggunakan sifat relasi kuadran vertikal, nilai cot(105°) setara dengan -tan(15°).\nLangkah 2: Operasi perkalian pada soal berubah menjadi: -tan²(15°).\nLangkah 3: Menggunakan rumus selisih dua sudut tan(45° - 30°), didapatkan nilai tan(15°) = 2 - √3.\nLangkah 4: Kuadratkan nilai tersebut lalu kalikan dengan minus:\n==> -(2 - √3)¹\n==> -(4 - 4√3 + 3)\n==> -(7 - 4√3)\n==> 4√3 - 7 (Pilihan A)."
+      pembahasan: "Langkah 1: Menggunakan sifat relasi kuadran vertikal, nilai cot(105°) setara dengan -tan(15°).\nLangkah 2: Operasi perkalian pada soal berubah menjadi: -tan²(15°).\nLangkah 3: Menggunakan rumus selisih dua sudut tan(45° - 30°), didapatkan nilai tan(15°) = 2 - √3.\nLangkah 4: Kuadratkan nilai tersebut lalu kalikan dengan minus:\n==> -(2 - √3)²\n==> -(4 - 4√3 + 3)\n==> -(7 - 4√3)\n==> 4√3 - 7 (Pilihan A)."
     },
     {
       id: 3,
@@ -55,7 +55,7 @@ export default function TryOutPage() {
       id: 4,
       jenis: "TKA",
       kategori: "Logaritma Lanjutan",
-      tanya: "Jika jika ²log 3 = a dan ³log 5 = b, maka nilai dari ⁶log 15 adalah...",
+      tanya: "Jika ²log 3 = a dan ³log 5 = b, maka nilai dari ⁶log 15 adalah...",
       opsi: [
         "A. (a + b) / (1 + a)",
         "B. a(1 + b) / (1 + a)",
@@ -132,7 +132,6 @@ export default function TryOutPage() {
     let errText = '';
     
     if (field === 'nama') {
-      // Regex untuk memvalidasi hanya huruf dan spasi
       const regexHuruf = /^[a-zA-Z\s]*$/;
       if (!regexHuruf.test(value)) {
         errText = '⚠️ Nama wajib diisi menggunakan huruf saja!';
