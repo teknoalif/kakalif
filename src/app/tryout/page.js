@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 
 export default function TryOutPage() {
   // Masukkan URL Web App dari Google Apps Script Anda di sini nanti
-  const APPS_SCRIPT_URL = "MASUKKAN_URL_WEB_APP_APPS_SCRIPT_DI_SINI";
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxRCRazFCmk256qpO64d3s-oYbZ1sQESHPaN1g8axherZMj8CFv69Z0tOX_9lHRTy2C/exec";
 
   // Data Soal Mandiri
   const daftarSoal = [
