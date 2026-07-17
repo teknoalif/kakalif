@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 
 export default function TryOutPage() {
   // URL Google Apps Script Anda yang sudah aktif
-  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxRCRazFCmk256qp064d3s-oYbZ1sQESHPaN1g8axherZMj8CFv69Z0tOX_91HRTy2C/exec";
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxRCRazFCmk256qpO64d3s-oYbZ1sQESHPaN1g8axherZMj8CFv69Z0tOX_9lHRTy2C/exec";
 
   // DATA 8 SOAL: 3 SOAL UTBK + 5 SOAL BARU TKA
   const daftarSoal = [
