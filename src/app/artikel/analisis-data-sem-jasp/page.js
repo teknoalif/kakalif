@@ -48,7 +48,7 @@ export default function DetailArtikelSemJasp() {
           {/* Bagian 1 */}
           <h2 className="text-xl font-black text-white tracking-tight pt-2">1. Memahami Struktur Data Model</h2>
           <p>
-            Sebelum masuk ke aplikasi JASP, kita perlu memetakan variabel teoritis ke dalam struktur data riil. Model ini umumnya terdiri dari <strong>3 Variabel Laten</strong> (Variabel bentukan) dan <strong>10 Indikator</strong> (Variabel manifest/terukur):
+            Sebelum masuk aPlikasi JASP, kita perlu memetakan variabel teoritis ke dalam struktur data riil. Model ini umumnya terdiri dari <strong>3 Variabel Laten</strong> (Variabel bentukan) dan <strong>10 Indikator</strong> (Variabel manifest/terukur):
           </p>
           <ul className="list-disc pl-6 space-y-1 text-zinc-300">
             <li><strong>Trust (Kepercayaan):</strong> Diukur oleh indikator <em>citra, care,</em> dan <em>jujur</em>.</li>
@@ -117,7 +117,7 @@ citra ~~ layanan`}
               <strong>Fit Indicators (Uji Keselarasan Model):</strong> Periksa nilai <em>Comparative Fit Index</em> (CFI) dan <em>Tucker-Lewis Index</em> (TLI) yang diharapkan berada di atas $0.90$. Serta nilai <em>Root Mean Square Error of Approximation</em> (RMSEA) yang diharapkan berada di bawah $0.08$. Jika terpenuhi, model teoritis Anda dinyatakan fit dengan data riil lapangan.
             </li>
             <li>
-              <strong>Parameter Estimates (Factor Loadings):</strong> Pastikan nilai muatan faktor dari setiap indikator menuju variabel latennya memiliki nilai signifikansi $p < 0.05$.
+              <strong>Parameter Estimates (Factor Loadings):</strong> Pastikan nilai muatan faktor dari setiap indikator menuju variabel latennya memiliki nilai signifikansi $p &lt; 0.05$.
             </li>
             <li>
               <strong>Regression Coefficients (Uji Hipotesis Jalur):</strong> Ini merupakan inti pengujian hipotesis Anda. Evaluasi baris <code>loyalty ~ trust</code> dan <code>loyalty ~ satisfaction</code>. Jika nilai probabilitas ($p$) berada di bawah alpha $0.05$, maka hipotesis pengaruh positif signifikan dinyatakan diterima.
