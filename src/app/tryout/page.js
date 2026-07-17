@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export default function TryOutPage() {
-  // Ganti dengan URL Google Apps Script Anda yang sudah aktif
+  // URL Google Apps Script Anda yang sudah aktif
   const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxRCRazFCmk256qp064d3s-oYbZ1sQESHPaN1g8axherZMj8CFv69Z0tOX_91HRTy2C/exec";
 
   // DATA 8 SOAL: 3 SOAL UTBK + 5 SOAL BARU TKA
@@ -374,14 +374,15 @@ export default function TryOutPage() {
                 ))}
               </div>
 
+              {/* TOMBOL SUBMIT YANG SUDAH DILONGGARKAN */}
               <div className="border-t border-zinc-800/60 pt-6 flex justify-end">
                 <button
                   onClick={hitungHasilTryOut}
-                  disabled={sudahSubmit || Object.keys(jawabanUser).length < daftarSoal.length}
+                  disabled={sudahSubmit}
                   className={`rounded-2xl px-6 py-4 text-xs sm:text-sm font-black transition-all shadow-md ${
-                    sudahSubmit || Object.keys(jawabanUser).length < daftarSoal.length
+                    sudahSubmit
                       ? 'bg-zinc-800 text-zinc-500 cursor-not-allowed'
-                      : 'bg-white text-slate-950 active:scale-95'
+                      : 'bg-white text-slate-950 active:scale-95 hover:bg-zinc-100'
                   }`}
                 >
                   {sudahSubmit ? '✓ Hasil Jawaban Berhasil Dievaluasi' : '🚀 Selesai & Kirim Skor'}
