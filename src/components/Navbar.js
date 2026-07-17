@@ -22,6 +22,8 @@ export default function Navbar() {
           <a href="/" className="hover:text-white transition-colors">Beranda</a>
           <a href="/#produk" className="hover:text-white transition-colors">Produk</a>
           <a href="/tryout" className="text-amber-400 font-bold hover:text-amber-300 transition-colors animate-pulse">📝 TryOut TKA</a>
+          {/* MENU ARTIKEL BARU PADA DESKTOP */}
+          <a href="/artikel" className="hover:text-cyan-400 transition-colors">Artikel</a>
           <a href="/#portofolio" className="hover:text-white transition-colors">Portofolio</a>
           <a href="/#prestasi" className="hover:text-white transition-colors">Prestasi</a>
           <a href="https://wa.me/6285256162879" target="_blank" rel="noopener noreferrer" className="rounded-xl bg-sky-600 px-4 py-2 font-semibold text-white shadow-md shadow-sky-600/20 hover:bg-sky-500 transition-all duration-200">
@@ -50,6 +52,8 @@ export default function Navbar() {
           <a href="/" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Beranda</a>
           <a href="/#produk" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Produk</a>
           <a href="/tryout" onClick={() => setIsOpen(false)} className="block text-amber-400 font-bold hover:text-amber-300 transition-colors">📝 TryOut TKA</a>
+          {/* MENU ARTIKEL BARU PADA MOBILE */}
+          <a href="/artikel" onClick={() => setIsOpen(false)} className="block hover:text-cyan-400 transition-colors">Artikel</a>
           <a href="/#portofolio" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Portofolio</a>
           <a href="/#prestasi" onClick={() => setIsOpen(false)} className="block hover:text-white transition-colors">Prestasi</a>
           <a href="https://wa.me/6285256162879" target="_blank" rel="noopener noreferrer" className="block w-full text-center rounded-xl bg-sky-600 py-2.5 font-semibold text-white hover:bg-sky-500 transition-colors">
