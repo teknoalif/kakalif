@@ -48,78 +48,78 @@ export default function DetailArtikelRumusAbc() {
           {/* Bagian 1 */}
           <h2 className="text-xl font-black text-white tracking-tight pt-2">1. Bentuk Umum &amp; Langkah Awal</h2>
           <p>
-            Misalkan kita memiliki bentuk umum persamaan kuadrat berderajat dua dengan syarat nilai koefisien {"$a \\neq 0$"}:
+            Misalkan kita memiliki bentuk umum persamaan kuadrat berderajat dua dengan syarat nilai koefisien <em>a</em> &ne; 0:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$ax^2 + bx + c = 0$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            ax² + bx + c = 0
           </div>
           
           <p>
-            Langkatan pertama yang perlu dilakukan adalah mengisolasi variabel dengan membagi kedua ruas dengan koefisien a agar variabel kuadrat utama menjadi tunggal:
+            Langkah pertama yang perlu dilakukan adalah mengisolasi variabel dengan membagi kedua ruas dengan koefisien <em>a</em> agar variabel kuadrat utama menjadi tunggal:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$x^2 + \\frac{b}{a}x + \\frac{c}{a} = 0$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            x² + (b/a)x + c/a = 0
           </div>
 
           <p>
-            Selanjutnya, pindahkan konstanta {"$\\frac{c}{a}$"} ke ruas sebelah kanan dengan cara mengurangkan kedua ruas:
+            Selanjutnya, pindahkan konstanta <sup>c</sup>&frasl;<sub>a</sub> ke ruas sebelah kanan dengan cara mengurangkan kedua ruas:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$x^2 + \\frac{b}{a}x = -\\frac{c}{a}$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            x² + (b/a)x = -c/a
           </div>
 
           {/* Bagian 2 */}
           <h2 className="text-xl font-black text-white tracking-tight pt-2">2. Inti Manipulasi: Melengkapkan Kuadrat Sempurna</h2>
           <p>
-            Agar ruas kiri dapat difaktorkan menjadi bentuk kuadrat sempurna {"$(x + k)^2$"}, kita perlu memanipulasi aljabar dengan menambahkan nilai kuadrat dari <strong>setengah kali koefisien x</strong> pada kedua ruas. 
+            Agar ruas kiri dapat difaktorkan menjadi bentuk kuadrat sempurna (x + k)², kita perlu memanipulasi aljabar dengan menambahkan nilai kuadrat dari <strong>setengah kali koefisien x</strong> pada kedua ruas. 
           </p>
           <p>
-            Koefisien x kita adalah {"$\\frac{b}{a}$"}, maka setengah nilainya adalah {"$\\frac{b}{2a}$"}. Kuadrat dari nilai tersebut adalah {"$\\left(\\frac{b}{2a}\\right)^2$"}. Mari tambahkan nilai ini ke ruas kiri dan kanan:
+            Koefisien x kita adalah (b/a), maka setengah nilainya adalah (b/2a). Kuadrat dari nilai tersebut adalah (b/2a)². Mari tambahkan nilai ini ke ruas kiri dan kanan:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$x^2 + \\frac{b}{a}x + \\left(\\frac{b}{2a}\\right)^2 = -\\frac{c}{a} + \\left(\\frac{b}{2a}\\right)^2$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            x² + (b/a)x + (b/2a)² = -c/a + (b/2a)²
           </div>
 
           <p>
             Sekarang, ubah bentuk ruas kiri menjadi kuadrat sempurna, dan jabarkan nilai eksponen di ruas kanan:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$\\left(x + \\frac{b}{2a}\\right)^2 = -\\frac{c}{a} + \\frac{b^2}{4a^2}$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            (x + b/2a)² = -c/a + b² / 4a²
           </div>
 
           <p>
-            Untuk menyederhanakan pecahan di ruas kanan, samakan penyebutnya menjadi {"$4a^2$"} dengan mengalikan pembilang dan penyebut suku {"$-\\frac{c}{a}$"} dengan 4a:
+            Untuk menyederhanakan pecahan di ruas kanan, samakan penyebutnya menjadi 4a² dengan mengalikan pembilang dan penyebut suku -c/a dengan 4a:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{b^2 - 4ac}{4a^2}$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            (x + b/2a)² = (b² - 4ac) / 4a²
           </div>
 
           {/* Bagian 3 */}
           <h2 className="text-xl font-black text-white tracking-tight pt-2">3. Penarikan Akar &amp; Hasil Akhir</h2>
           <p>
-            Hilangkan pangkat dua pada ruas kiri dengan melakukan penarikan akar kuadrat di kedua sisi persamaan. Jangan lupa menyertakan simbol plus-minus ke dalam rumus karena operasi kuadrat memiliki dua kemungkinan akar:
+            Hilangkan pangkat dua pada ruas kiri dengan melakukan penarikan akar kuadrat di kedua sisi persamaan. Jangan lupa menyertakan simbol plus-minus (&plusmn;) karena operasi kuadrat memiliki dua kemungkinan akar:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$x + \\frac{b}{2a} = \\pm \\sqrt{\\frac{b^2 - 4ac}{4a^2}}$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            x + b/2a = &plusmn; &radic;((b² - 4ac) / 4a²)
           </div>
 
           <p>
-            Karena penyebut di dalam akar {"($4a^2$)"} merupakan bilangan kuadrat sempurna, kita dapat mengeluarkan nilainya dari tanda akar menjadi 2a:
+            Karena penyebut di dalam akar (4a²) merupakan bilangan kuadrat sempurna, kita dapat mengeluarkan nilainya dari tanda akar menjadi 2a:
           </p>
-          <div className="bg-zinc-900/50 border border-zinc-850 p-4 rounded-xl text-center font-mono my-4 text-zinc-100">
-            {"$$x + \\frac{b}{2a} = \\pm \\frac{\\sqrt{b^2 - 4ac}}{2a}$$"}
+          <div className="bg-zinc-900/50 border border-zinc-850 p-5 rounded-xl text-center font-mono my-4 text-zinc-100 text-base md:text-lg font-bold tracking-wide">
+            x + b/2a = &plusmn; (&radic;(b² - 4ac)) / 2a
           </div>
 
           <p>
-            Langkah penutup, pindahkan suku {"$\\frac{b}{2a}$"} ke ruas kanan dengan mengurangkan kedua ruas. Karena kedua suku di ruas kanan memiliki penyebut yang sama yaitu 2a, kita bisa menyatukannya menjadi formula tunggal:
+            Langkah penutup, pindahkan suku b/2a ke ruas kanan dengan mengurangkan kedua ruas. Karena kedua suku di ruas kanan memiliki penyebut yang sama yaitu 2a, kita bisa menyatukannya menjadi formula tunggal:
           </p>
           
-          <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl text-center font-mono my-6 text-cyan-400 font-bold text-lg md:text-xl shadow-inner">
-            {"$$x_{1,2} = \\frac{-b \\pm \sqrt{b^2 - 4ac}}{2a}$$"}
+          <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl text-center font-mono my-6 text-cyan-400 font-black text-xl md:text-2xl shadow-inner tracking-wide">
+            x₁,,₂ = (-b &plusmn; &radic;(b² - 4ac)) / 2a
           </div>
 
           <p>
-            <strong>Q.E.D. (Quod Erat Demonstrandum)</strong>, Rumus ABC telah terbukti secara sah! Melalui pembuktian ini, siswa tidak hanya menghafal huruf-huruf rumus kecap secara buta, melainkan memahami korelasi geometri manipulasi kuadrat sempurna yang melatarbelakanginya.
+            <strong>Q.E.D. (Quod Erat Demonstrandum)</strong>, Rumus ABC telah terbukti secara sah! Melalui pembuktian ini, siswa tidak hanya menghafal huruf-huruf rumus kuadratik secara buta, melainkan memahami korelasi aljabar kuadrat sempurna yang melatarbelakanginya.
           </p>
         </div>
 
