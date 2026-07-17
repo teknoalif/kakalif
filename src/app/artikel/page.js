@@ -9,43 +9,43 @@ export default function ArtikelPage() {
 
   const daftarKategori = ['Semua', 'Lari', 'Matematika', 'Free Software', 'Mata Kuliah'];
 
-  // 2. DATA DUMMY ARTIKEL (Bisa Anda ganti dengan tulisan asli Anda nanti)
+  // 2. DATA ARTIKEL YANG SUDAH DISESUAIKAN LINK-NYA
   const dataArtikel = [
     {
       id: 1,
-      judul: "Panduan Menginstal JASP untuk GNU/Linux, Windows, dan MacOS",
-      ringkasan: "JASP merupakan software alternatif SPSS yang free. Ayo simak cara mudah memasangnya di Laptop kalian masing-masing.",
+      judul: "Panduan Praktis Analisis Data SEM Menggunakan JASP: Alternatif Bebas & Terbuka",
+      ringkasan: "JASP merupakan software alternatif SPSS yang bebas dan kuat. Ayo simak cara memetakan model, menggunakan sintaks lavaan, dan membaca output fit model.",
       kategori: "Free Software",
       tanggal: "17 Juli 2026",
-      baca: "4 mnt baca",
-      slug: "install-jasp"
+      baca: "6 mnt baca",
+      slug: "analisis-data-sem-jasp" // Mengarah ke /artikel/analisis-data-sem-jasp
     },
     {
       id: 2,
-      judul: "Konsistensi Jarak Jauh: Membangun Ketahanan Fisik Bagi Pelari Pemula",
-      ringkasan: "Berbagi tips manajemen waktu dan teknik pernapasan untuk mempertahankan rutinitas lari mingguan di tengah padatnya jadwal kerja.",
-      kategori: "Lari",
-      tanggal: "17 Juli 2026",
-      baca: "5 mnt baca",
-      slug: "tips-lari-konsisten-pemula"
-    },
-    {
-      id: 3,
-      judul: "Memahami Keindahan Rumus Vieta pada Persamaan Kuadrat",
-      ringkasan: "Menggali lebih dalam bagaimana hubungan akar-akar persamaan kuadrat dapat mempermudah penyelesaian soal-soal Matematika.",
+      judul: "Menelusuri Asal-usul Rumus ABC: Pembuktian Aljabar Persamaan Kuadrat",
+      ringkasan: "Banyak siswa menghafal rumus kuadratik tanpa tahu asalnya. Mari buktikan secara logis selangkah demi selangkah menggunakan metode melengkapkan kuadrat sempurna.",
       kategori: "Matematika",
       tanggal: "17 Juli 2026",
-      baca: "6 mnt baca",
-      slug: "rumus-vieta-matematika"
+      baca: "5 mnt baca",
+      slug: "pembuktian-rumus-abc-kuadrat" // Mengarah ke /artikel/pembuktian-rumus-abc-kuadrat
     },
     {
-      id: 4,
-      judul: "Analisis Riil: Pembuktian Sifat Archimedes pada Sistem Bilangan Real",
-      ringkasan: "Catatan kuliah dan penjabaran terstruktur mengenai konsep dasar aksioma kelengkapan dan implikasinya pada analisis matematika.",
-      kategori: "Mata Kuliah",
-      tanggal: "17 Juli 2026",
-      baca: "8 mnt baca",
-      slug: "analisis-riil-sifat-archimedes"
+    id: 3,
+    judul: "Dibalik Layar Buku \"Matematika itu Asyik\": Mendobrak Stigma Kaku Angka",
+    ringkasan: "Catatan reflektif mengenai perancangan buku ini. Memadukan logika, konsep dasar, dan pendekatan dialogis santai untuk menyajikan matematika secara lebih manusiawi.",
+    kategori: "Matematika",
+    tanggal: "17 Juli 2026",
+    baca: "4 mnt baca",
+    slug: "matematika-itu-asyik" // Sesuai dengan nama rute folder baru
+    },
+    {
+    id: 4,
+    judul: "Koding itu Asyik: Menjelajahi JavaScript dan Arsitektur Next.js",
+    ringkasan: "Menulis kode bukan sekadar memberikan instruksi ke komputer, melainkan seni menyusun logika. Mari bedah bagaimana ekosistem kakalif.my.id dibangun menggunakan Next.js.",
+    kategori: "Free Software",
+    tanggal: "17 Juli 2026",
+    baca: "5 mnt baca",
+    slug: "koding-itu-asyik" // Sesuai dengan nama rute folder baru
     }
   ];
 
