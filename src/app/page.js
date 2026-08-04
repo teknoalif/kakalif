@@ -14,10 +14,7 @@ export default function Home() {
     <main className="min-h-screen pt-16">
       <Navbar />
       <BookPromo />
-      <RumaatunPromo /> 
-      <Hero />
       <Products />
-      <Features />
       <Portfolio />
       <Achievements />
       <Testimonials />
