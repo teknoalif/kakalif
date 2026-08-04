@@ -12,8 +12,9 @@ export default function Products() {
       period: "/1 tahun",
       discountTag: "Diskon 50%",
       bonus: "Akses Penuh Video & 4 Set Latihan Soal UTBK 2027",
-      cta: "Mulai Belajar Sekarang",
+      cta: "Beli / Daftar via WA",
       link: "https://wa.me/6285256162879?text=Halo%20Kak%20Alif,%20saya%20tertarik%20dengan%20Program%20Rumatun%20UTBK%202027",
+      visitLink: "https://rumatun.jamia.id", // Tautan kunjungan web
       color: "border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500/50"
     },
     {
