@@ -23,7 +23,7 @@ export default function Products() {
       title: "Matematika itu Asyik",
       desc: "Buku panduan revolusioner yang dirancang khusus untuk mematahkan mitos bahwa matematika itu menakutkan. Penuh ilustrasi menarik & penyampaian santai.",
       badge: "Cetak & Digital",
-      image: "/hargamia.png", // Dimensi 4405 x 6250
+      image: "/hargamia-2.png",
       originalPrice: "Rp 175.000",
       discountPrice: "Rp 165.025",
       period: "",
