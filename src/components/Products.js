@@ -1,4 +1,5 @@
 'use client';
+
 export default function Products() {
   const products = [
     {
@@ -14,7 +15,7 @@ export default function Products() {
       bonus: "Akses Penuh Video & 4 Set Latihan Soal UTBK 2027",
       cta: "Beli / Daftar via WA",
       link: "https://wa.me/6285256162879?text=Halo%20Kak%20Alif,%20saya%20tertarik%20dengan%20Program%20Rumatun%20UTBK%202027",
-      visitLink: "https://rumatun.jamia.id", // Tautan kunjungan web
+      visitLink: "https://rumatun.jamia.id",
       color: "border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500/50"
     },
     {
@@ -22,7 +23,7 @@ export default function Products() {
       title: "Matematika itu Asyik",
       desc: "Buku panduan revolusioner yang dirancang khusus untuk mematahkan mitos bahwa matematika itu menakutkan. Penuh ilustrasi menarik & penyampaian santai.",
       badge: "Cetak & Digital",
-      image: "/hargamia.png",
+      image: "/hargamia.png", // Dimensi 4405 x 6250
       originalPrice: "Rp 175.000",
       discountPrice: "Rp 165.025",
       period: "",
@@ -37,7 +38,7 @@ export default function Products() {
       title: "Belajar Python dari Nol Bareng Kak Alif",
       desc: "Panduan komprehensif menguasai pemrograman Python dari tingkat dasar. Cocok untuk pemula yang ingin membangun fondasi logika koding kuat.",
       badge: "Buku + Bonus Video",
-      image: "/hargapython.jpg",
+      image: "/hargapython.png", // Disesuaikan ekstensinya jadi .png
       originalPrice: "Rp 275.000",
       discountPrice: "Rp 190.000",
       period: "",
@@ -57,16 +58,16 @@ export default function Products() {
           <p className="mt-4 text-lg text-slate-600">Pilih media belajar terbaik untuk menguasai matematika dan pemrograman secara terstruktur.</p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 items-start">
           {products.map((p, idx) => (
             <div key={idx} className={`flex flex-col justify-between rounded-3xl border p-8 transition-all duration-300 shadow-sm hover:shadow-md ${p.color}`}>
               <div>
-                {/* Image Banner / Cover */}
-                <div className="mb-6 overflow-hidden rounded-2xl bg-slate-100 border border-slate-200/60 aspect-[4/3] flex items-center justify-center">
+                {/* Image Banner / Cover dengan Rasio Tegak Sesuai Dimensi Asli */}
+                <div className="mb-6 overflow-hidden rounded-2xl bg-slate-100 border border-slate-200/60 aspect-[1/1.41] flex items-center justify-center">
                   <img 
                     src={p.image} 
                     alt={p.title} 
-                    className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="h-full w-full object-contain hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       e.target.onerror = null;
                       e.target.style.display = 'none';
@@ -101,8 +102,24 @@ export default function Products() {
               </div>
 
               {/* Tombol Aksi */}
-              <div className="mt-8">
-                <a href={p.link} target="_blank" rel="noopener noreferrer" className="block w-full text-center rounded-xl bg-slate-900 px-4 py-3 font-semibold text-white hover:bg-slate-800 transition-colors duration-200 shadow-md">
+              <div className="mt-8 space-y-2">
+                {p.visitLink && (
+                  <a 
+                    href={p.visitLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="block w-full text-center rounded-xl border-2 border-slate-900 bg-white px-4 py-2.5 font-bold text-slate-900 hover:bg-slate-100 transition-colors duration-200 shadow-sm text-sm"
+                  >
+                    🌐 Kunjungi rumatun.jamia.id
+                  </a>
+                )}
+
+                <a 
+                  href={p.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block w-full text-center rounded-xl bg-slate-900 px-4 py-3 font-semibold text-white hover:bg-slate-800 transition-colors duration-200 shadow-md text-sm"
+                >
                   {p.cta}
                 </a>
               </div>
